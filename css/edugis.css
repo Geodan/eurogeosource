@@ -1,0 +1,429 @@
+.edugis-header {background:#006599 url(edugislogo.png) no-repeat 0 0; height:60px  !important; }
+ 
+/** allemaal om doubleclick-select verkleuring in webkit te voorkomen **/
+/*
+div::selection  form::selection input ::selection {
+    -webkit-appearance: none !important;
+    -khtml-user-select: none;
+}
+input[type=text]{
+    -webkit-appearance: none !important;    
+}
+input[type=reset]{
+    -webkit-appearance: none !important;
+    -khtml-user-select: none;
+}
+textarea  {
+    -webkit-appearance: none !important;
+    -khtml-user-select: none;
+}
+input[type=submit] {
+    -webkit-appearance: none !important;
+    -khtml-user-select: none;
+}
+*::selection{
+    -webkit-appearance: none !important;
+    -khtml-user-select: none;
+}
+* {
+    -moz-user-select: none;//mozilla browsers
+    -khtml-user-select: none;//webkit browsers
+}
+*/
+/** einde doubleclick verkleuring **/
+
+.olControlMeasureActive { cursor: crosshair; }
+
+body {
+background-color:#EEEEEE;
+font-family:Lucida Grande,Lucida Sans,Arial,Helvetica,sans-serif;
+font-size:100%;
+}
+
+.olControlAttribution {
+bottom: 1.5em !important; 
+}
+ .ui-corner-all {
+    -moz-border-radius:2px 2px 2px 2px;
+}
+#map {
+  height:100%;
+  width:100%;
+}
+
+.ui-widget-header {
+    background: #204a87;
+    border: solid 1px #2e3436;
+    color: #eeeeec;
+}
+.ui-widget-content {
+border: none;
+}
+.ui-dialog {
+border: solid 1px #2e3436;
+padding: 0;
+-moz-border-radius:4px 4px 0px 0px;
+ }
+ .ui-dialog .ui-dialog-content {
+ padding: 0.4em;
+ }
+
+
+.ui-widget-header .ui-icon {
+
+background-image:url("images/ui-icons_256x240.png");
+}
+.ui-dialog .ui-dialog-titlebar {
+ padding: 0em;
+padding-left: 0.2em;
+margin: 0;
+-moz-border-radius:2px 2px 0px 0px;
+border: solid 1px #2e3436;
+ border-top:none;
+}
+
+.mapdialog{
+border: solid 1px #2e3436; border-top:none;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+right:0;
+}
+
+.layerlegendheader { -moz-border-radius:2px 2px 0px 0px}
+
+.layerlegendimage {
+background: #FFF;
+border: solid 1px #2e3436;
+}
+.ui-slider .ui-slider-handle {
+border: solid 2px #2e3436;
+height: 0.7em;
+width: 0.7em;
+}
+.ui-slider-horizontal {
+height: 0.4em;
+background:  #ffe;
+border: solid 2px #2e3436;
+}
+.ui-icon-overview {
+background-position:-48px -82px;
+float: right;
+z-index:99999;
+position:absolute;
+right: 0px;
+bottom: 0px;
+}
+
+.ui-effects-transfer { border: 2px dotted gray; z-index: 2000;} 
+
+#commodity-search {
+    margin-bottom:  10px;
+}
+#commodities {
+margin: 5px;
+background: white;
+border: solid black 1px;
+padding: 2px;
+}
+.commodity {
+border: solid black 1px;
+margin-bottom: 2px;
+background: #fefada;
+}
+.comm-title {
+background: #1a1280;
+height: 15px;
+color: white;
+padding-left: 2px;
+font-size: 10px;
+}
+.comm-body {
+padding: 2px;
+}
+.comm-graph {
+width: 125px;
+}
+
+#map-layers ul {
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+
+#map-layers li {
+background-image: url("images/folder-off.png");
+background-repeat: no-repeat;
+padding-left: 16px; 
+}
+
+#map-layers li.open{
+background-image: url("images/folder-on.png") !important;
+background-repeat: no-repeat;
+}
+
+.ul-closed {
+display: none;
+}
+
+#map-layers li.li-layer {
+background-image: url("images/layer-off.png");
+}
+#map-layers li.loading{
+background-image: url("images/spinner.gif");
+}
+#map-layers li {
+cursor: pointer;
+}
+
+#map-layers li.layer-on{
+background-image: url("images/layer-on.png");
+}
+
+#map-layers li .baselayer-on{
+background-image: url("images/base-on.png") !important;
+}
+#map-layers li .baselayer-off{
+background-image: url("images/base-off.png") !important;
+}
+
+#editlayer {
+    border-top: solid 1px grey;
+    cursor: pointer;
+}
+
+#editpanel {
+    height: 100px;
+    width: 210px;
+    border: solid 1px black;
+    background-color: white;
+}
+/*.olPopup {
+border: solid 1px #2e3436;
+}
+.olPopupContent {
+padding:5px;
+}
+.popupform input{
+border: solid 1px #2e3436;
+background: #eeeeec;
+margin-top:5px;
+}
+
+.featuretitle{
+width: 180px;
+height: 16px;
+}
+.featuredesc {
+border: solid 1px #2e3436;
+background: #eeeeec;
+width: 202px;
+height: 54px;
+}
+*/
+.buttons input{
+border:1px solid #2E3436;
+background: #888a85;
+padding-left:5px;
+padding-right:5px;
+color: white;
+cursor:pointer;
+
+}
+.buttons input:hover{
+background: #eeeeec;
+color: black;
+}
+.rij {
+width: 200px;
+padding: 0px;
+padding-bottom: 2px;
+margin: 0px;
+display: block;
+}
+.rij-wijd {
+width: 300px;
+padding: 0px;
+padding-bottom: 2px;
+margin: 0px;
+display: block;
+}
+.cel {
+display: inline;
+}
+.right {
+text-align: right;
+}
+.buttons {
+width: 50px;
+padding-left: 5px
+}
+.delete {
+margin-right: 30px;
+color: blue;
+text-decoration: underline;
+}
+
+#maptoolbar {
+float:left;
+height:30px;
+left:50px;
+position:absolute;
+top:10px;
+width: 180px;
+z-index:10000;
+}
+#maptoolbar .active {
+border: solid 2px #204a87;
+margin-top: 0px;
+}
+#maptoolbar .tb-icon{
+width: 28px;
+height: 28px;
+float: right;
+margin-left: 5px;
+cursor: pointer;
+}
+#maptoolbar .active:hover {
+border: solid 2px orange;
+}
+#maptoolbar .inactive {
+border: solid 1px grey;
+margin-top: 1px;
+
+}
+#maptoolbar .inactive:hover {
+border: solid 1px orange;
+}
+#edit-point {
+background-image: url("images/icon-point.png");
+}
+
+#edit-line {
+background-image: url("images/icon-lijn.png");
+}
+
+#edit-polygon {
+background-image: url("images/icon-poly.png");
+}
+
+#edit-pan {
+background-image: url("images/icon-nav.png");
+}
+#edit-meet {
+background-image: url("images/icon-meet.png");
+}
+
+
+.ui-slider-handle {
+    height: 12px !important;
+    width: 8px !important;
+    margin-left: -4px !important;
+    border: solid 1px black !important;
+    font-size: 2px; 
+    margin-top: -4px; 
+}
+
+.marker { cursor: pointer;}
+.slider { width: 100px; 
+        margin: 0px;
+        height: 5px;
+        left: 110px;
+        top: 8px;
+    }
+    
+.deletebutton, .cancelbutton, .okbutton {
+    background-color: lightgrey;
+    margin: 3px;
+    border: solid 1px black;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+
+.fileopenbuttons {margin-top: 10px;}
+.fileopenbuttons > .openbutton, .fileopenbuttons > .cancelbutton, .fileopenbuttons > .addbutton {
+    background-color: lightgrey;
+    margin: 3px;
+    border: solid 1px black;
+    cursor: default;
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+
+    
+/* 
+featureeditor stijlen
+*/
+.featurebox { border: solid 1px black; width: 35px; height: 35px; margin: 0; padding: 0; position: absolute; left: 5px; top: 5px; background-color: white;}
+.setbox { position: relative; width: 275px; height: 160px; border: solid 1px black; background-color: #f0f0f0; font-family: Verdana, Arial, sans serif; font-size: 12px; margin: 4px;}
+
+.titlebox {margin-left: 5px;}
+.descriptionbox{margin-left: 5px;}
+.setboxinput input {border: dotted 1px grey; width: 240px;}
+.setboxdescriptionarea textarea {border: dotted 1px grey; width: 240px; height: 95px;}
+
+.featureboxje { border: solid 1px #204a87; width: 16px; height: 16px; margin: 0; padding: 0;
+  position: absolute; right: 5px; top: 5px; background-color: white;cursor:pointer;
+  background: url(images/stijl.png) center no-repeat;}
+.featureboxje:hover {border: solid 1px orange; }
+.textboxje { border: solid 1px #204a87; width: 16px; height: 16px; margin: 0; padding: 0;
+  position: absolute; right: 5px; top: 5px; background-color: white;cursor:pointer;
+  background: url(images/text.png) center no-repeat;}
+.textboxje:hover {border: solid 1px orange; }
+
+
+#markerbox { width: 200px; height: 75px; position: absolute; left: 70px; top: 28px; overflow: auto; border: dotted 1px grey;}
+#addmarkerbutton { position:absolute; left:10px; width:60px;top:85px;height:18px;background-color:light-grey;border-left:solid 1px black;border-bottom:solid 1px black;border-top:solid 1px black;text-align:center;}
+.sliderlabel {width: 100px; height: 16px; position: absolute; left: 0px; top: 0px; text-align: right; }
+.slidervalue { width: 60px; height: 16px; position: absolute; left: 220px; top: 0px; }
+.palette { border: solid 1px gray; }
+.colorbox { position: relative; width: 10px; height: 10px; border: solid 1px black; display: inline-block;}
+.palettebox { display: none; }
+.newmarkerbox { display: none; position: absolute; left:5px; top: 5px; border: solid 1px black; padding: 2px; margin: 2px; background-color: white; height:90px; width:260px;}
+.newmarkerbox  .buttonbox { position:absolute; left: 5px; bottom: 5px; }
+.newmarkerbox input{
+border:1px solid #2E3436;
+background: white;
+padding-left:0px;
+padding-right:0px;
+width: 220px;
+color: blue;
+cursor:default;
+}
+.newmarkerbox input:hover, .buttons input:hover{
+border: 1px solid orange;
+}
+
+#pointset { }
+.pointfeature { width: 60px; height: 60px; left: 5px; top: 5px;}
+#pointtypebox { width: 100px; height: 15px; position: absolute; left: 70px; top: 5px; }
+#pointfillcolor { height: 36px; position: absolute; left: 90px; top: 25px;}
+#pointstrokecolor {  height: 36px; position: absolute; left: 90px; top: 51px;}
+#pointradiusbox { width: 280px; height: 16px; position: absolute; left: 5px; top: 80px; }
+#pointfillopacitybox { width: 280px; height: 16px; position: absolute; left: 5px; top: 100px; }
+#pointstrokewidthbox { width: 280px; height: 16px; position: absolute; left: 5px; top: 120px;  }
+#pointstrokeopacitybox { width: 280px; height: 16px; position: absolute; left: 5px; top: 140px; }
+
+
+#lineset { }
+.linefeature { width: 150px; height: 35px; left: 5; top: 5 }
+#linetypebox { width: 100px; height: 15px; position: absolute; left: 5px; top: 45px; }
+#linestrokecolor { width: 100px; height: 36px; position: absolute; left: 5px; top: 70px;}
+#linestrokewidthbox { width: 280px; height: 16px; position: absolute; left: 5px; top: 105px;}
+#linestrokeopacitybox { width: 280px; height: 16px; position: absolute; left: 5px; top: 125px;}
+
+#polygonset { }
+.polygonfeature { width: 60px; height: 60px; left: 5px; top: 5px; }
+#polygonlinetypebox { width: 100px; height: 15px; position: absolute; left: 90px; top: 5px;}
+#polygonfillcolor { width: 100px; height: 18px; position: absolute; left: 90px; top: 25px; }
+#polygonstrokecolor { width: 100px; height: 18px; position: absolute; left: 90px; top: 46px; }
+#polygonstrokewidthbox { width: 280px; height: 16px; position: absolute; left: 5px; top: 80px;  }
+#polygonstrokeopacitybox { width: 280px; height: 16px; position: absolute; left: 5px; top: 100px;  }
+#polygonfillopacitybox { width: 280px; height: 16px; position: absolute; left: 5px; top: 120px;  }
+
+
+.fe-button { cursor: pointer; }
+
+.styleeditor {margin:5px 5px 5px;}

@@ -1,0 +1,141 @@
+/* page wide settings */
+*, html, body {
+margin: 0px;
+padding: 0px;
+ font: normal small/1.4em Verdana, sans-serif;
+
+}
+
+b {
+font-weight: bold;
+}
+html {
+ min-width: 550px !important;
+ min-height: 450px !important;
+ }
+ img
+{  border-style: none;
+}
+/* /page wide settings */
+
+/* pane-layout settings */
+.ui-layout-pane { /* all 'panes' */ 
+    background: #FFF; 
+    padding: 0px; 
+    overflow: hidden;
+} 
+
+.ui-layout-pane-south {
+    border-top: solid 1px #2e3436;
+}
+.ui-layout-pane-west {
+    border-right: solid 1px #5C3566;
+    background: #f3f3f0;
+    overflow: auto;
+}
+
+.ui-layout-pane-east {
+    border-left: solid 1px #5C3566;
+        background: #f3f3f0;
+		 overflow: auto;
+}
+span.ui-layout-button-close {
+    position:   absolute;
+    bottom:     0;
+    width:      20px;
+    height:     20px;
+    z-index:    2;
+    display:    block;
+    cursor:     pointer;
+}
+/* /pane-layout settings */
+
+/* header pane settings */
+.edugis-heading {   
+    background:#006599 url(images/headerback.png) repeat-x; 
+    height:90px  !important; 
+}
+.heading-top {
+    height: 70px;
+}
+
+.h-t-links {
+position: absolute;
+right: 0px;
+top:0px;
+}
+.h-t-link {
+border-left: 1px solid black;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+padding: 2px;
+background: white;
+}
+.h-t-link:hover {
+
+background: #eeeeec;
+}
+.h-t-link a {
+text-decoration: none;
+}
+#geo-search {
+position: absolute;
+right: 250px;
+top:15px;
+font-size: 20px;
+}
+.heading-bottom {
+    height: 19px;
+    font-size: 15px;
+    background:#006599 url(images/header-down.png) repeat-x; 
+    
+}
+#close-east {
+    right:250px;
+    background: url(images/close-east.png) no-repeat;
+}
+#close-west {
+    left:250px;
+    background: url(images/close-west.png) no-repeat;
+}
+#open-west {
+ left: 0px;
+ background: url(images/open-west.png) no-repeat;
+ display: none;
+}
+#open-east {
+ right: 0px;
+ background: url(images/open-east.png) no-repeat;
+ display: none;
+} 
+.h-b-west {
+    width: 249px;
+    border-left: solid 1px #eeeeec;
+    
+    background: #eeeeec;
+
+    margin-top:1px;
+    text-align: center; 
+    
+}
+.h-b-east {
+    width: 249px;
+    border-right: solid 1px #eeeeec;
+    background: #eeeeec;
+
+    right:0px;
+    position:absolute;
+    top:70px;
+    margin-top:1px;
+    text-align: center;
+}
+.h-b-middle {
+    position:   absolute;
+    top:        72px;
+    height:     20px;
+    right:      280px;
+    z-index:    2;
+    display:    block;
+    cursor:     pointer;
+}
+/* /header pane settings */
